@@ -1,0 +1,187 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden; /* Fix for horizontal overflow */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../img/signin.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Root Variables */
+:root {
+  --primary-color: #50C878;        /* Emerald Green */
+  --secondary-color: #F2C94C;      /* Soft Gold */
+  --off-white: #F7F7F7;            /* Off-White */
+  --dark-charcoal: #333333;        /* Dark Charcoal */
+  --light-color: rgba(255, 255, 255, 0.7); /* Light color for subtle elements */
+  --dark-text-color: #212121;      /* Darker text color */
+}
+
+/* Typography Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: var(--off-white);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Back to Home Styling */
+.back-to-home i {
+  color: var(--light-color);
+  margin-right: 10px;
+}
+
+.back-to-home a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+/* Input Box Styling */
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+  color: var(--off-white); /* Default text color */
+}
+
+.input-box input::placeholder {
+  color: var(--off-white);
+}
+
+.input-box input:focus {
+  color: var(--off-white); /* Text color on focus */
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+}
+
+/* Remember and Forget Section */
+.wrapper .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: -15px 0 15px;
+}
+
+.remember-forget label {
+  font-family: "Roboto";
+}
+
+.remember-forget label input {
+  accent-color: var(--off-white);
+  margin-right: 3px;
+}
+
+.remember-forget a {
+  font-family: "Roboto";
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.wrapper a.btn {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  background: var(--light-color);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: var(--dark-text-color);
+  font-weight: 600;
+  text-align: center;
+  line-height: 45px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.wrapper a.btn:hover {
+  background: var(--primary-color); /* Change to primary color */
+  color: var(--off-white); /* Change text color on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+
+/* Register Link Section */
+.wrapper .register-link {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: var(--off-white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Wrapper for Mobile */
+@media (max-width: 767px) {
+  .wrapper {
+      margin: 0 20px;
+  }
+}

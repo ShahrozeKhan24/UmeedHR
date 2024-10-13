@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('../img/signin.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: white;
+}
+
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #50c878;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #50c878;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-link a {
+    color: #50c878;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .wrapper {
+        margin: 0 20px;
+    }
+}
+
+.messageDivv{
+    background-color: #50c878;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
+}

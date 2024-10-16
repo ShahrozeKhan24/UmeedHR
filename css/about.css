@@ -253,6 +253,174 @@ body {
 }
 /* Breadcrumb */
 
+/* About */
+.about-us .nav-tabs {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.about-us .nav-link {
+  border: 2px solid #ccc;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #333;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.about-us .nav-link h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.about-us .nav-link:hover,
+.about-us .nav-link.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.about-us .tab-content .about-us-text {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.about-us .tab-content .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.about-us .tab-content .text-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.about-us .tab-content .text-content p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.accordion-button i {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.accordion-body {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+/* About */
+
+/* Fact */
+.fact-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.fact-card i {
+  color: var(--primary-color);
+}
+
+.fact-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.accordion-button {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.accordion-button i {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.accordion-body {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+/* Fact */
+
+/* Award */
+#card-awards .card-award {
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card-awards .card-award:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#card-awards h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+#card-awards img {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 576px) {
+  #card-awards .card-award {
+    height: auto;
+  }
+}
+/* Award */
+
 
 /* Footer Start */
 .footer {
